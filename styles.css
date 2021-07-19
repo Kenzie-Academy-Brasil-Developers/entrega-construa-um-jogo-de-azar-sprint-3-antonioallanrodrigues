@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+}
+
+img {
+    max-width: 25%;
+    margin: 3%;
+}
+
+#pedraUsuario:hover {
+    border: solid 4px red;
+}
+
+#papelUsuario:hover {
+    border: solid 4px red;
+}
+
+#tesouraUsuario:hover {
+    border: solid 4px red;
+}
+
+@media (min-width: 1024px) {
+    img {
+        max-width: 8%;
+        margin: 1%;
+    }
+    h1 {
+        font-size: 300%;
+    }
+    h2 {
+        font-size: 200%;
+    }
+    div {
+        font-size: 150%;
+    }
+}
