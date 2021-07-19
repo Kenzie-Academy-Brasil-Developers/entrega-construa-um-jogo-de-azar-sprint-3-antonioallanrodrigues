@@ -5,7 +5,8 @@ var derrota = 0;
 const escolheuPedra = document.getElementById("pedraUsuario");
 
 escolheuPedra.addEventListener('click', function() {
-
+    const resultadoTela = document.getElementById("resultadoTela");
+    resultadoTela.innerHTML = "";
 
     const pedra = document.getElementById("pedraPc");
     pedra.style.border = "none";
@@ -28,11 +29,12 @@ escolheuPedra.addEventListener('click', function() {
             // pedra
             let resultadoFinal = "EMPATE";
             empate += 1;
+            const resultadoTela = document.getElementById("resultadoTela");
             const resultado = document.createElement("div");
             resultado.innerHTML = resultadoFinal;
-            document.body.appendChild(resultado);
+            resultadoTela.appendChild(resultado);
             const pedra = document.getElementById("pedraPc");
-            pedra.style.border = "solid";
+            pedra.style.border = "solid 4px";
             pedra.style.borderColor = "green";
 
 
@@ -41,24 +43,26 @@ escolheuPedra.addEventListener('click', function() {
 
             let resultadoFinal = "VOCÊ PERDEU";
             derrota += 1;
+            const resultadoTela = document.getElementById("resultadoTela");
             const resultado = document.createElement("div");
             resultado.innerHTML = resultadoFinal;
-            document.body.appendChild(resultado);
-            const papel = document.getElementById("papelPc");
-            papel.style.border = "solid";
-            papel.style.borderColor = "green";
+            resultadoTela.appendChild(resultado);
+            const pedra = document.getElementById("papelPc");
+            pedra.style.border = "solid 4px";
+            pedra.style.borderColor = "green";
 
         } else if (a === 3) {
             // tesoura
 
             let resultadoFinal = "VOCÊ GANHOU";
             vitoria += 1;
+            const resultadoTela = document.getElementById("resultadoTela");
             const resultado = document.createElement("div");
             resultado.innerHTML = resultadoFinal;
-            document.body.appendChild(resultado);
-            const tesoura = document.getElementById("tesouraPc");
-            tesoura.style.border = "solid";
-            tesoura.style.borderColor = "green";
+            resultadoTela.appendChild(resultado);
+            const pedra = document.getElementById("tesouraPc");
+            pedra.style.border = "solid 4px";
+            pedra.style.borderColor = "green";
         }
 
         console.log(a);
@@ -72,7 +76,8 @@ escolheuPedra.addEventListener('click', function() {
 const escolheuPapel = document.getElementById('papelUsuario');
 escolheuPapel.addEventListener('click', function() {
 
-
+    const resultadoTela = document.getElementById("resultadoTela");
+    resultadoTela.innerHTML = "";
 
     const pedra = document.getElementById("pedraPc");
     pedra.style.border = "none";
@@ -94,34 +99,37 @@ escolheuPapel.addEventListener('click', function() {
 
             let resultadoFinal = "VOCÊ GANHOU";
             vitoria += 1;
+            const resultadoTela = document.getElementById("resultadoTela");
             const resultado = document.createElement("div");
             resultado.innerHTML = resultadoFinal;
-            document.body.appendChild(resultado);
+            resultadoTela.appendChild(resultado);
             const pedra = document.getElementById("pedraPc");
-            pedra.style.border = "solid";
+            pedra.style.border = "solid 4px";
             pedra.style.borderColor = "green";
 
         } else if (a === 2) {
 
             let resultadoFinal = "EMPATE";
             empate += 1;
+            const resultadoTela = document.getElementById("resultadoTela");
             const resultado = document.createElement("div");
             resultado.innerHTML = resultadoFinal;
-            document.body.appendChild(resultado);
-            const papel = document.getElementById("papelPc");
-            papel.style.border = "solid";
-            papel.style.borderColor = "green";
+            resultadoTela.appendChild(resultado);
+            const pedra = document.getElementById("papelPc");
+            pedra.style.border = "solid 4px";
+            pedra.style.borderColor = "green";
 
         } else if (a === 3) {
 
             let resultadoFinal = "VOCÊ PERDEU";
             derrota += 1;
+            const resultadoTela = document.getElementById("resultadoTela");
             const resultado = document.createElement("div");
             resultado.innerHTML = resultadoFinal;
-            document.body.appendChild(resultado);
-            const tesoura = document.getElementById("tesouraPc");
-            tesoura.style.border = "solid";
-            tesoura.style.borderColor = "green";
+            resultadoTela.appendChild(resultado);
+            const pedra = document.getElementById("tesouraPc");
+            pedra.style.border = "solid 4px";
+            pedra.style.borderColor = "green";
         }
         console.log(a);
         console.log("Você Ganhou: " + vitoria);
@@ -135,6 +143,8 @@ const escolheuTesoura = document.getElementById('tesouraUsuario');
 
 escolheuTesoura.addEventListener('click', function() {
 
+    const boxStorage = document.getElementById("resultadoTela");
+    boxStorage.innerHTML = "";
 
     const pedra = document.getElementById("pedraPc");
     pedra.style.border = "none";
@@ -156,35 +166,38 @@ escolheuTesoura.addEventListener('click', function() {
 
             let resultadoFinal = "VOCÊ PERDEU";
             derrota += 1;
+            const resultadoTela = document.getElementById("resultadoTela");
             const resultado = document.createElement("div");
             resultado.innerHTML = resultadoFinal;
-            document.body.appendChild(resultado);
+            resultadoTela.appendChild(resultado);
             const pedra = document.getElementById("pedraPc");
-            pedra.style.border = "solid";
+            pedra.style.border = "solid 4px";
             pedra.style.borderColor = "green";
 
         } else if (a === 2) {
 
             let resultadoFinal = "VOCÊ GANHOU";
             vitoria += 1;
+            const resultadoTela = document.getElementById("resultadoTela");
             const resultado = document.createElement("div");
             resultado.innerHTML = resultadoFinal;
-            document.body.appendChild(resultado);
-            const papel = document.getElementById("papelPc");
-            papel.style.border = "solid";
-            papel.style.borderColor = "green";
+            resultadoTela.appendChild(resultado);
+            const pedra = document.getElementById("papelPc");
+            pedra.style.border = "solid 4px";
+            pedra.style.borderColor = "green";
 
 
         } else if (a === 3) {
 
             let resultadoFinal = "EMPATE";
             empate += 1;
+            const resultadoTela = document.getElementById("resultadoTela");
             const resultado = document.createElement("div");
             resultado.innerHTML = resultadoFinal;
-            document.body.appendChild(resultado);
-            const tesoura = document.getElementById("tesouraPc");
-            tesoura.style.border = "solid";
-            tesoura.style.borderColor = "green";
+            resultadoTela.appendChild(resultado);
+            const pedra = document.getElementById("tesouraPc");
+            pedra.style.border = "solid 4px";
+            pedra.style.borderColor = "green";
 
         }
         console.log(a);
